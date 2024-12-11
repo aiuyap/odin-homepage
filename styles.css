@@ -52,11 +52,12 @@ header p {
 }
 
 .separator {
-  width: 0;
+  width: 100%;
   height: 0;
-  border-left: 100vw solid transparent;
+  border-left: calc(100vw - 16px) solid transparent;
   border-bottom: 25vw solid var(--sec-color);
   margin-top: -25vw;
+  overflow-x: hidden;
 }
 
 .my-work {
