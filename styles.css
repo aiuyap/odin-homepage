@@ -76,7 +76,7 @@ h1 {
 }
 
 .about-me {
-  padding: 2rem;
+  padding: 3rem;
   box-shadow: var(--shadow);
   background-color: var(--sec-color);
 }
@@ -87,7 +87,6 @@ h1 {
   border-left: calc(100vw - 16px) solid transparent;
   border-bottom: 25vw solid var(--bg-color);
   margin-top: -25vw;
-  overflow-x: hidden;
 }
 
 .my-work {
@@ -244,5 +243,43 @@ footer {
   .footer-photo {
     display: flex;
     justify-content: center;
+  }
+
+  header {
+    display: block;
+  }
+
+  .profile-photo {
+    float: left;
+    max-width: 300px;
+    transform: translate(-10%, -10%);
+  }
+
+  .profile-photo h1 {
+    transform: translateY(550%);
+  }
+
+  .separator {
+    border-bottom: 5vw solid var(--bg-color);
+    margin-top: -5vw;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .profile-photo {
+    float: none;
+    min-width: 300px;
+    transform: none;
+  }
+
+  .separator {
+    border-bottom: 50vw solid var(--bg-color);
+    margin-top: -50vw;
   }
 }
