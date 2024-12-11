@@ -101,17 +101,56 @@ header p {
 .card {
   background-color: var(--sec-color);
   box-shadow: var(--shadow);
+  max-width: 520px;
 }
 
 .project-ss {
   padding: 10rem 5rem;
-  background-color: rgb(134, 24, 24);
   text-align: center;
   font-size: 2rem;
 }
 
+.project-ss.one {
+  background-image: url(./img/1.jpg);
+  background-size: cover;
+}
+
+.project-ss.two {
+  background-image: url(./img/2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-ss.three {
+  background-image: url(./img/3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-ss.four {
+  background-image: url(./img/4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-ss.five {
+  background-image: url(./img/5.jpg);
+  background-size: cover;
+}
+
+.project-ss.six {
+  background-image: url(./img/6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .project-info {
   padding: 2rem 2rem 5rem;
+  font-size: 1.2rem;
+}
+
+.project-info p {
+  color: hsl(0, 0%, 40%);
 }
 
 .project-head {
@@ -124,6 +163,7 @@ header p {
 .project-head h2 {
   font-family: "Playfair Display", sans-serif;
   font-weight: 200;
+  font-size: 2rem;
 }
 
 .project-head svg,
@@ -153,5 +193,5 @@ footer {
 
 .footer-icons {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
