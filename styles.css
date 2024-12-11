@@ -1,16 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-  --bg-color: #151515;
-  --prim-color: #a91d3a;
-  --sec-color: #c73659;
-  --ter-color: #c73659;
-  --f-color: #eeeeee;
+  --prim-color: #19a7ce;
+  --sec-color: #f6f1f1;
+  --f-color: #151515;
+  --shadow-color: 0deg 0% 0%;
+  --shadow: 0.8px 0.7px 1.2px hsl(var(--shadow-color) / 0.11), 2.6px 2.2px 3.8px -0.8px hsl(var(--shadow-color) / 0.11),
+    6.5px 5.5px 9.6px -1.7px hsl(var(--shadow-color) / 0.11), 15.7px 13.3px 23.1px -2.5px hsl(var(--shadow-color) / 0.11);
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: var(--f-color);
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--sec-color);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 5vw;
+  background-color: var(--prim-color);
+}
+
+header h1 {
+  margin-bottom: 3rem;
+}
+
+header img {
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 200;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+.about-me {
+  padding: 5rem;
+  box-shadow: var(--shadow);
+  background-color: var(--sec-color);
+}
+
+.separator {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  border-bottom: 25vw solid var(--sec-color);
+  margin-top: -25vw;
+}
+
+.my-work {
+  margin: 5rem;
 }
