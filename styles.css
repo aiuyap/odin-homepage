@@ -23,7 +23,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  padding: 5vw;
+  padding: 5rem;
   background-color: var(--prim-color);
 }
 
@@ -33,6 +33,19 @@ header h1 {
 
 header img {
   box-shadow: var(--shadow);
+}
+
+.header-links img {
+  width: 50px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.header-links {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
 }
 
 h1 {
@@ -46,7 +59,7 @@ header p {
 }
 
 .about-me {
-  padding: 5rem;
+  padding: 3rem;
   box-shadow: var(--shadow);
   background-color: var(--sec-color);
 }
@@ -84,4 +97,21 @@ header p {
 
 .project-info {
   padding: 2rem 2rem 5rem;
+}
+
+.project-head {
+  display: grid;
+  grid-template-columns: 1fr 32px 32px;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-head h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 200;
+}
+
+.project-head svg,
+.project-head img {
+  width: 32px;
 }
