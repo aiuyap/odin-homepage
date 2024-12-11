@@ -1,0 +1,16 @@
+:root {
+  --bg-color: #151515;
+  --prim-color: #a91d3a;
+  --sec-color: #c73659;
+  --ter-color: #c73659;
+  --f-color: #eeeeee;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
