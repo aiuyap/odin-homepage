@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="profile-photo">
-        <img src="./img/prof-pic.jpg" alt="The Joker" width="780px" height="auto" />
+        <img src="./img/prof-pic.jpg" alt="The Joker"/>
         <h1>The Joker</h1>
       </div>
       <div class="about-me">
@@ -142,7 +142,10 @@
         </div>
       </div>
       <div class="footer-photo">
-        <img src="./img/footer-pic.jpg" alt="The Joker" width="900px">
+        <picture>
+          <source srcset="./img/footer-pic-s.jpg" media="(max-width: 1500px)">
+          <img src="./img/footer-pic.jpg" alt="The Joker">
+        </picture>
       </div>
     </footer>
   </body>

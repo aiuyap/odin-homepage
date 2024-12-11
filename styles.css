@@ -29,12 +29,18 @@ header {
 .profile-photo {
   display: flex;
   justify-content: center;
+  max-width: 700px;
 }
 
 .profile-photo h1 {
   position: absolute;
   color: var(--sec-color);
-  transform: translateY(750%);
+  margin: 0;
+}
+
+.profile-photo img {
+  width: 100%;
+  object-fit: cover;
 }
 
 header h1 {
@@ -53,24 +59,24 @@ header img {
 }
 
 .header-links {
-  padding-top: 5rem;
+  padding-top: 3rem;
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "Playfair Display", sans-serif;
   font-weight: 200;
 }
 
-header p {
-  font-size: 2rem;
+.about-me p {
+  font-size: 1.2rem;
 }
 
 .about-me {
-  padding: 3rem;
+  padding: 2rem;
   box-shadow: var(--shadow);
   background-color: var(--sec-color);
 }
@@ -93,6 +99,7 @@ header p {
 }
 
 .my-work-container {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
@@ -106,8 +113,6 @@ header p {
 
 .project-ss {
   padding: 10rem 5rem;
-  text-align: center;
-  font-size: 2rem;
 }
 
 .project-ss.one {
@@ -183,15 +188,61 @@ footer {
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 0px 3rem;
+  gap: 2rem;
+  padding: 0px 2rem;
+  justify-content: center;
 }
 
 .contact-info p {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .footer-icons {
   display: flex;
   gap: 1rem;
+}
+
+.footer-photo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.contact-info,
+.footer-photo {
+  flex: 1 1 0;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    max-width: 370px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    gap: 2rem;
+  }
+
+  .contact-info p,
+  .header p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .footer-photo img {
+    min-width: 300px;
+  }
+
+  .footer-photo {
+    display: flex;
+    justify-content: center;
+  }
 }
