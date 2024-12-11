@@ -63,3 +63,25 @@ header p {
 .my-work {
   margin: 5rem;
 }
+
+.my-work-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.card {
+  background-color: var(--sec-color);
+  box-shadow: var(--shadow);
+}
+
+.project-ss {
+  padding: 10rem 5rem;
+  background-color: rgb(134, 24, 24);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.project-info {
+  padding: 2rem 2rem 5rem;
+}
